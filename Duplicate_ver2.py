@@ -37,12 +37,12 @@ def win():
 #window function call
 win()
 
-#Function to generate duplicates taking active toggle choice as argument
-
+#Function to generate duplicates of currently selected object(s)
 
 def generate():
 
     cmds.setToolTo('createObject')
+    #Populating currently selected list of objects
     dupObj = cmds.duplicate(cmds.ls(sl=True))
 
     #getting cursor click position
